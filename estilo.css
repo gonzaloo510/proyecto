@@ -1,0 +1,92 @@
+body {
+ background-image: url(Fondo.jpg);
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ background-attachment: fixed;
+
+}
+
+
+.foto {
+  background-image: url("Foto.jpg");
+  background-size: contain;
+  width: 180px;
+  height: 180px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 50px;
+  margin-top: -50px;
+
+ 
+}
+#titulo h1 {
+font-size: 80px;
+
+}
+
+
+.container span {
+  font-size: 25px;
+  padding: 10px;
+}
+.container button {
+    background: #4741d7; /* color de fondo */
+    color: #ebeaf5; /* color de fuente */
+    border: 2px solid #4741d7; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .container button:hover {
+    color: #f16868;/* color de fuente hover */
+  }
+  .container button::after {
+    content: "";
+    background: #d6d5f5; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.3s ease;
+  }
+  .container button:hover::after {
+    transition: all 0.3s ease-out;
+    transform: skewX(-45deg) scale(1, 1);
+  }
+ 
+p {
+  color: #1e2224;
+  font-size: 25px;
+  font-family: 'Titan One', cursive;
+  margin-left: 45px;
+}
+
+h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 45px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-left: 45px;
+}
+h2 { 
+  font-family: 'Titan One', cursive;
+  margin-left: 45px;
+  font-size: 33px;
+}
+/*Gonzalo Iglesias*/
+
+
+
+
+
+
+
